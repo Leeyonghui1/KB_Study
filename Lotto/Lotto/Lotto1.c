@@ -5,7 +5,7 @@
 #define MAX 45 //로또 숫자 범위
 #define SIZE 6 //로또 개수
 
-void setting();
+//void setting();
 
 int main(void)
 {
@@ -46,7 +46,7 @@ int main(void)
 		printf("%d ", lotto[i]);
 	printf("] 입니다");
 
-	system("pause>>null");
+	system("pause");
 	return 0;
 }
 

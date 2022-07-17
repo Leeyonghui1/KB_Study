@@ -4,8 +4,8 @@
 
 void main()
 {
-	srand(time(NULL));
 	int num[7];
+	srand(time(NULL));
 	
 	while (1)
     {
