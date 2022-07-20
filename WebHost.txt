@@ -1,0 +1,14 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Hello World</h1>
+    <h1 style = "color:blue">Good Bye World</h1>
+    <img src = "이미지주소">
+  </body>
+</html> 
+
+
+
+github.com에서 새 repository에 위를 타이핑으로 적고
+파일에서 새 .txt에 위 내용을 복사하고
+~~.html으로 바꾼다
