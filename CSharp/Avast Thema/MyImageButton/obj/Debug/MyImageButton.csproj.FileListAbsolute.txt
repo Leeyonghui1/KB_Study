@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\bin\Debug\MyImageButton.dll
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\bin\Debug\MyImageButton.pdb
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.dll
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.pdb
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.CustomImageButton.resources
+C:\Users\KB\Desktop\수업\Avast Thema\MyImageButton\obj\Debug\MyImageButton.csproj.GenerateResource.cache

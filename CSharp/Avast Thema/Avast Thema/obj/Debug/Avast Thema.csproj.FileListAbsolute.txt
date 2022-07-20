@@ -1,0 +1,14 @@
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\bin\Debug\Avast Thema.exe.config
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\bin\Debug\Avast Thema.exe
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\bin\Debug\Avast Thema.pdb
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast_Thema.Form1.resources
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast_Thema.Properties.Resources.resources
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.exe
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.pdb
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\bin\Debug\MyImageButton.dll
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\bin\Debug\MyImageButton.pdb
+C:\Users\KB\Desktop\수업\Avast Thema\Avast Thema\obj\Debug\Avast Thema.csproj.CopyComplete
