@@ -1,4 +1,2 @@
-﻿  3[1].c
-C:\Users\KB\Desktop\20220721\20220721\3[1].c(10): warning C4716: 'up_Print': 값을 반환해야 합니다.
-3.obj : error LNK2001: 확인할 수 없는 외부 기호 b
-C:\Users\KB\Desktop\20220721\x64\Debug\20220721.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿  2.c
+  20220721.vcxproj -> D:\20220721\x64\Debug\20220721.exe
