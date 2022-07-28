@@ -1,29 +1,46 @@
 #include<stdio.h>
+#include<string.h>
 int main()
 {
-
-	
-	static char arr[1000001];
-	gets(arr);
-	int a = 0; // 서로 다른 알파벳 체크
-	int b = 0; // 서로 같은 알파벳 체크
-	int size = 0;
+	int alpha[26] = { 0 };
+	static char arr[1000005] = { '\0' };
+	scanf("%s", arr);  //gets(arr)
+	int size;  // int size = 0 ;
+	size = strlen(arr);
+	/*
 	for (int i = 0; arr[i] != '\0'; i++)
 		size++;
-	printf(" size = %d\n", size);
-
+	*/
+	int number = 0;
 	for (int i = 0; i < size; i++)
 	{
-		for (int j = 0; j < i; j++)
-		{
-			
-		}
+		if (arr[i] >= 'a' && arr[i] <= 'z')
+			number = arr[i] - 'a';
+		if (arr[i] >= 'A' && arr[i] <= 'Z')
+			number = arr[i] - 'A';
+		alpha[number]++;
 	}
-
-	printf(" a = %d, b = %d", a, b);
-  
-	
-	 
-
+	int max = alpha[0];
+	int point = 0;
+	for (int i = 0; i < 26; i++)
+	{
+		if (alpha[i] > max)
+		{
+			max = alpha[i];
+			point = i;
+		}
+		else
+			continue;
+	}
+	int same = 0;
+	for (int i = 0; i < 26; i++)
+	{
+		if (alpha[i] == max)
+			same++;
+	}
+	if (same > 1)
+		printf("?");
+	else
+		printf("%c", point + 'A');
 	return 0;
 }
