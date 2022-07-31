@@ -1,6 +1,32 @@
 #include<stdio.h>
-//백준문제는 프로젝트 속성 -> c/c++ sdl검사 "아니요"
-//scanf사용
+int main()
+{
+	char a[80];
+	int t;
+	scanf("%d", &t);
+	rewind(stdin);
+	for (int i = 0; i < t; i++)
+	{
+		gets(a);
+		int count = 0;
+		int sum = 0;
+		for (int j = 0; a[j] != '\0'; j++)
+		{
+			if (a[j] == 'O')
+			{
+				count++;
+				sum += count;
+			}
+			else if (a[j] == 'X')
+				count = 0;
+			else
+				continue;
+		}
+		printf("%d\n", sum);
+	}
+	return 0;
+}
+/* 
 int main()
 {
 	char a[80];
@@ -9,7 +35,7 @@ int main()
 	scanf("%d", &n);
 	while (i < n)
 	{
-		scanf("%s",a);
+		scanf("%s", a);
 		if (i < n)
 		{
 			int sum = 0;
@@ -34,3 +60,4 @@ int main()
 	}
 	return 0;
 }
+*/
