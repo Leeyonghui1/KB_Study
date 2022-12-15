@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=300&section=header&text=Yong Hui%20GitHub&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=300&section=header&text=YongHui%20GitHub&fontSize=90)
 
  <div align=center>
 <h2 align="center"> 성장하는 개발자 </h2> 
@@ -31,16 +31,3 @@
 ---
 </div>
 
-<!-- ## 📩 Ask me about
-
-<a href="mailto:orbitahj@gmail.com"> <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=mailto:orbitahj@gmail.com"/> </a>
--- >
-
-<!-- My status
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ahnseojun&show_icons=true)
--->
-
-
-<!--
-**Ahnseojun/Ahnseojun** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
