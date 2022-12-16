@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T2 Solution</title>
+    <style>
+        button,input
+        {
+            left: 0px;
+            top: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button>글자추가</button>
+    <input type="text"> 
+    <script>
+        function nextRandomInteger(limit) {
+            //round는 반올림
+            return Math.round(Math.random()*limit)
+        }
+
+        let randomAlphabet = (
+            function()
+            {
+                const alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+                const alphabet2 = '가나다라마바사아자차카타파하'
+                const alphabet3 = '아야어여오요우유우이'
+                const alphabet4 = '亞兒阿雅牙芽娥我訝'
+                
+                const lang = [alphabet, alphabet2, alphabet3, alphabet4]
+
+                return function() {
+                    const myalpha = lang[nextRandomInteger(lang.length-1)]
+                    return myalpha[nextRandomInteger(myalpha.length-1)]
+                }
+            }
+        )()
+
+        function randomSpeed(maxSpeed) {
+            return Math.random()*maxSpeed-
+            Math.random()*maxSpeed
+        }
+
+        //최대 너비와 높이
+        let canvasWidth = 700
+        let canvasHeight = 400
+
+    
+        function MovingText(param)
+        {
+  
+            this.x=nextRandomInteger(canvasWidth)
+            this.y=nextRandomInteger(canvasHeight)
+            this.vx = randomSpeed(10)
+            this.vy = randomSpeed(10)
+            this.text = document.createElement('h1')
+            if(!param) // 매개변수 없는 경우는 false
+                this.text.innerText = randomAlphabet()
+            else
+                this.text.innerText = param
+
+            this.text.style.position='fixed'
+            document.body.appendChild(this.text)
+        }
+        MovingText.prototype.move = 
+        function() {
+            if(this.x<0 || this.x>canvasWidth)
+                this.vx *= -1 
+            if(this.y<0 || this.y>canvasHeight)
+                this.vy *= -1 
+            this.x += this.vx
+            this.y += this.vy
+  
+            this.text.style.left = this.x+'px'
+            this.text.style.top = this.y+'px'
+        }
+
+        let movingTexts = []
+
+        for(let i = 0; i<100; i++)
+            movingTexts.push(new MovingText())
+        setInterval(function()
+        {
+            for(let i in movingTexts)
+            {
+                movingTexts[i].move()
+                movingTexts[i].text.style.color = 
+                 `rgb(${nextRandomInteger(255)},
+                      ${nextRandomInteger(255)},
+                      ${nextRandomInteger(255)})`
+            }
+                
+            let color = ['#FF0000','black']
+            document.body.style.background = 
+                 color[nextRandomInteger(1)]
+        },1000/30)
+    </script>
+    <script>
+        let adder = document.querySelector('button')
+        let input = document.querySelector('input')
+        adder.onclick = function()
+        {
+            movingTexts.push(new MovingText(input.value))
+        }
+    </script>
+</body>
+</html>

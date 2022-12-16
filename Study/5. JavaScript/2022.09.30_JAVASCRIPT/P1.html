@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리액트 클래스.컴포넌트</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // name, imgUrl은 객체 속성
+        // props :: properties(속성) 약자
+        class MyApp extends React.Component
+        {
+            render()
+            {
+                return <div>
+                    <h1>{this.props.name}</h1>
+                    <img src={this.props.imgUrl}/>
+                </div>
+            }
+        }
+
+        const container = document.getElementById('root')
+        ReactDOM.render(<MyApp name = '이동준' imgUrl ='https://cdn.wikifarmer.com/wp-content/uploads/2022/02/%ED%94%8C%EB%9F%BC%EB%B0%94%EA%B3%A0.jpg'/>,container)
+
+    </script>
+</body>
+</html>

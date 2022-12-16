@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <script>
+        // ;(세미콜론) 적지 않는다
+        // 하지만 아래의 코드를 한줄에 다 적을때는 ;(세미콜론)으로 구분한다
+        // console.log :: 해당 페이지의 console창에(F12) 띄우는 문구
+        console.log('안녕')
+        // alert :: 해당 페이지 접속할 때 띄우는 경고창
+        alert('Hello World')
+        // 자바스크립트의 변수 특징 :: 변수 타입(문자,문자열,숫자)구분이 없다
+        // 자바스크립트 변수 타입 :: var(과거) , let(최근) 두개뿐
+        // document :: 해당 html문서를 지칭
+        // querySelector :: html선택자를 선택
+        //                  수 많은 h1태그 중 가장 첫번째를 지칭
+        //                  all 표시를 해야 수 많은 h1태그를 지칭
+        let a = document.querySelector('h1')
+        a.style.background = 'yellow'
+        a.textContent = '안냐떼요'
+    </script>
+</body>
+</html>

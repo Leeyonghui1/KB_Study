@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 Solution</title>
+</head>
+<body>
+    <h1>당신의 띠를 상징하는 동물은?</h1>
+    <img src="" alt="" id="year">
+    <h1>당신의 태어난 월은?</h1>
+    <img src="" alt="" id="month">
+    <script>
+        let inputYear = prompt('언제 태어났나요?')
+        inputYear %= 12
+        document.querySelector('#year').src = inputYear + '.png'
+        
+        let inputMonth = prompt('몇 월생인가요?')
+        let imageTag = document.querySelector('#month')
+        //  inputMonth 는 prompt의 값을 저장하고
+        //  prompt는 기본적으로 문자열을 반환한다
+        //  그래서 switch문의 기준값 부분에서 
+        // 강제 형변환 Number를 사용한다
+        switch (Number(inputMonth)) {
+            case 12:
+            case 1:
+            case 2:
+                imageTag.alt = '겨울사진'
+                break
+            case 3:
+            case 4:
+            case 5:
+                imageTag.alt = '봄사진'
+                break
+            case 6:
+            case 7:
+            case 8:
+                imageTag.alt = '가을사진'
+                break
+            case 9:
+            case 10:
+            case 11:
+                imageTag.alt = '겨울사진'
+                break
+            default: // month값이 1~12가 아닐때
+            while (Number(inputMonth)>=13) 
+            {
+                alert('다시 입력하세요')
+                inputMonth = prompt('다시 입력하세요')
+                switch (Number(inputMonth)) 
+                {
+                    case 12:
+                    case 1:
+                    case 2:
+                        imageTag.alt = '겨울사진'
+                        break
+                    case 3:
+                    case 4:
+                    case 5:
+                        imageTag.alt = '봄사진'
+                        break
+                    case 6:
+                    case 7:
+                    case 8:
+                        imageTag.alt = '가을사진'
+                        break
+                    case 9:
+                    case 10:
+                    case 11:
+                        imageTag.alt = '겨울사진'
+                        break
+                }
+            }
+            break
+        }
+    </script>
+</body>
+</html>

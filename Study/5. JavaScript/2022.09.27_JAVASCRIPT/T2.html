@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+    <style>
+        button
+        {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        #answer,#submit,#cancel
+        {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #input
+        {
+            position: fixed;
+            top: 50px;
+            left: 150px;
+        }
+        #time
+        {
+            position: fixed;
+            top: 50px;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 60px;">
+        <h1 id="output" style="margin-left:170px"></h1>
+    </div>
+    <div>
+        <div style="margin-bottom:20px;">
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+        </div>
+        <div style="margin-bottom:20px;">
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+            <button class="choiceValue"></button>
+        </div>
+    </div>
+    <button id="cancel" style="margin-left: 20px">취소</button>
+    <button id="submit" style="margin-left: 20px">제출</button>
+    <!-- 현재까지 제출한 숫자랑, 현재 경과시간표시 -->
+    <!-- div[style='height:60px'] -->
+    <div style="height: 60px">
+        <h3 id="input" style="margin-left:170px"></h3>
+        <h5 id="time"></h5>
+    </div>
+    <button id="answer">
+        정답은?
+    </button>
+
+    <script>
+        // 정답 숫자 생성
+        let output = ''
+        let array = []
+        let input = 0
+        do {
+            input = Math.floor(Math.random()*10)
+            const idx = array.indexOf(input)
+            if(idx == -1)
+            {
+                array.push(input)
+                output+=input
+            }
+        } while (array.length<3);
+
+        let cancel = document.querySelector('#cancel')
+        let submit = document.querySelector('#submit')
+        let h1output = document.getElementById('output')
+        let h3input = document.getElementById('input')
+        let answer = document.getElementById('answer')
+        let time = document.getElementById('time')
+
+        let count = 0
+        let timecount = 0
+
+        // 실시간으로 숫자 올라가게하기(게임경과시간)
+        let timeCountInterval = setInterval(
+            function()
+            {
+                timecount++
+                time.innerText = timecount
+            },100)
+
+        // 버튼에 숫자 적기
+        let buttons = document.getElementsByClassName('choiceValue')
+        for(let i = 0 ; i < buttons.length ; i++)
+            buttons[i].textContent = i
+        
+        // 버튼 클릭시 숫자 출력
+        for(let i = 0 ; i < buttons.length ; i++)
+        {
+            buttons[i].addEventListener('click',function()
+            {
+                // i값이 이미 있다면 실행 안함
+                if(h1output.innerHTML.includes(i)==false)
+                {
+                    // 길이가 3이상이면 실행 안함
+                    if(h1output.innerHTML.length<3)
+                        h1output.innerHTML+=i
+                }
+            })
+        }
+
+        // 정답 맞췄거나 끝까지 못 맞춰서
+        // 새로운 답을 내야 하는 경우
+        function shuffleNewNumber()
+        {
+            // 버튼들에 적용된 스타일 제거
+            for(let i = 0 ; i < buttons.length ; i++)
+            {
+                
+                buttons[i].style.color = ''
+                buttons[i].disabled = false
+            }
+            // 정답 초기화
+            output = ''
+            array = []
+            input = 0
+            do {
+                input = Math.floor(Math.random()*10)
+                const idx = array.indexOf(input)
+                if(idx == -1)
+                {
+                    array.push(input)
+                    output+=input
+                }
+            } while (array.length<3);
+        }
+
+        // 취소버튼, 정답버튼 이벤트 추가
+        cancel.addEventListener('click', function()
+        {
+            h1output.innerHTML = ''
+            answer.innerHTML = '정답은?'
+        })
+        answer.addEventListener('click',function()
+        {
+            this.innerHTML = '정답은 ' + output
+        })
+
+
+        // 제출버튼 이벤트
+        submit.addEventListener('click',function()
+        {
+            if(h1output.innerHTML.length != 3)
+            {
+                alert("3글자를 입력하세요.")
+                return
+            }
+            count++ // 시도 횟수
+            // 정답을 맞췄을 때
+            if(output == h1output.innerHTML)
+            {
+                count = 0
+                alert('정답!')
+                if(timecount<100)
+                    alert('천재')
+                else
+                    alert('보통')
+                h3input.innerHTML = ''
+                shuffleNewNumber()
+                h1output.innerHTML = ''
+                answer.innerHTML = '정답은?'
+                // 타이머 리셋
+                timecount = 0
+                clearInterval(timeCountInterval)
+                timeCountInterval = setInterval(
+                    function()
+                    {
+                        timecount++
+                        time.innerHTML = timecount
+                    },100)
+            }
+            else
+            {
+                let point_S = 0
+                let point_B = 0
+                for(let i = 0 ; i < output.length ; i++)
+                {
+                    if(output[i] == h1output.innerHTML[i])
+                        point_S++
+                    else
+                    {
+                        for(let j = 0 ; j < 3 ; j++)
+                        {
+                            if(output[i] == h1output.innerHTML[j])
+                                point_B++
+                        }
+                    }
+                }
+                if(point_B != 0 || point_S != 0)
+                {
+                    h3input.innerHTML += `[${h1output.innerHTML}]\u00a0${point_S}S\u00a0${point_B}B<br>`
+                    h1output.innerHTML = ''
+                }
+                else
+                {
+                    h3input.innerHTML += `[${h1output.innerHTML}]\u00a0OUT<br>`
+                    h1output.innerHTML = ''
+                }
+
+                if(count == 3 || count == 5 || count == 7 || count == 8)
+                {
+                    let idx_del = Math.floor(Math.random()*10)
+                    let previous
+                    while(previous == idx_del)
+                    {
+                        idx_del = Math.floor(Math.random()*10)
+                    }
+                    for(let i = 0 ; i < output.length ; i++)
+                    {
+                        if(idx_del == output[i])
+                        {
+                            idx_del = Math.floor(Math.random()*10)
+                        }
+                    }
+                    console.log(count)
+                    previous = idx_del
+                    buttons[idx_del].style.color = 'red'
+                    buttons[idx_del].disabled = true
+                }
+
+                if(count == 9)
+                {
+                    count = 0
+                    alert('남은 기회가 없습니다. 정답은'+output+'입니다.')
+                    h3input.innerHTML = ''
+                    answer.innerHTML = '정답은?'
+                    shuffleNewNumber()
+                    timecount = 0
+                    clearInterval(timeCountInterval)
+                    timeCountInterval = setInterval(
+                        function()
+                        {
+                            timecount++
+                            time.innerHTML = timecount
+                        },100)
+                }
+
+            }
+        })
+        
+    </script>
+</body>
+</html>

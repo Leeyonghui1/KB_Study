@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1)대수의 법칙</title>
+    <script src="jQ.js"></script>
+    <script>
+        /* jQ에서 text 불러오는 법 & 바꾸는 법
+        // text 바꾸는법
+        $('h1:first').text('일')
+        // text 받아오기
+        let mytext = $('h1:first').text()
+        console.log(mytext)
+        */
+        $(function()
+        {
+            $('h1:first').text('일')
+            let mytext = $('h1:first').text()
+            console.log(mytext)
+            $('h1:first').text('1')
+
+            
+            let str = prompt('주사위 던질 횟수를 입력하세요')
+            let my_input = Number(str)
+            console.log(str)
+            console.log(my_input)
+
+            let cnt1 = 0
+            let cnt2 = 0
+            let cnt3 = 0
+            let cnt4 = 0
+            let cnt5 = 0
+            let cnt6 = 0
+
+            for(let i = 0 ; i < my_input ; i++)
+            {
+                let dice_num = Math.floor((Math.random()*6)+1)
+                console.log(dice_num)
+                
+                if(dice_num == 1)
+                {
+                    cnt1++
+                }
+                else if(dice_num == 2)
+                {
+                    cnt2++
+                }
+                else if(dice_num == 3)
+                {
+                    cnt3++
+                }
+                else if(dice_num == 4)
+                {
+                    cnt4++
+                }
+                else if(dice_num == 5)
+                {
+                    cnt5++
+                }
+                else if(dice_num == 6)
+                {
+                    cnt6++
+                }
+            }
+            
+            $('h1.a1').text(cnt1)
+            $('h1.a2').text(cnt2)
+            $('h1.a3').text(cnt3)
+            $('h1.a4').text(cnt4)
+            $('h1.a5').text(cnt5)
+            $('h1.a6').text(cnt6)
+
+            $('h2.a1').text((cnt1/my_input)*100)
+            $('h2.a2').text((cnt2/my_input)*100)
+            $('h2.a3').text((cnt3/my_input)*100)
+            $('h2.a4').text((cnt4/my_input)*100)
+            $('h2.a5').text((cnt5/my_input)*100)
+            $('h2.a6').text((cnt6/my_input)*100)
+
+            const max_count = Math.max(cnt1,cnt2,cnt3,cnt4,cnt5,cnt6)
+            if(max_count == cnt1)
+            {
+                $('h1.a1').css('color','red')
+                $('h2.a1').css('color','red')
+            }
+            else if(max_count == cnt2)
+            {
+                $('h1.a2').css('color','red')
+                $('h2.a2').css('color','red')
+            }
+            else if(max_count == cnt3)
+            {
+                $('h1.a3').css('color','red')
+                $('h2.a3').css('color','red')
+            }
+            else if(max_count == cnt4)
+            {
+                $('h1.a4').css('color','red')
+                $('h2.a4').css('color','red')
+            }
+            else if(max_count == cnt5)
+            {
+                $('h1.a5').css('color','red')
+                $('h2.a5').css('color','red')
+            }
+            else if(max_count == cnt6)
+            {
+                $('h1.a6').css('color','red')
+                $('h2.a6').css('color','red')
+            }
+
+            
+        })
+    </script>
+</head>
+<body>
+    <h1>1</h1>
+    <h1 class="a1">0</h1>
+    <h2 class="a1">0</h1>
+    <h1>2</h1>
+    <h1 class="a2">0</h1>
+    <h2 class="a2">0</h1>
+    <h1>3</h1>
+    <h1 class="a3">0</h1>
+    <h2 class="a3">0</h1>
+    <h1>4</h1>
+    <h1 class="a4">0</h1>
+    <h2 class="a4">0</h1>
+    <h1>5</h1>
+    <h1 class="a5">0</h1>
+    <h2 class="a5">0</h1>
+    <h1>6</h1>
+    <h1 class="a6">0</h1>
+    <h2 class="a6">0</h1>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ 적용하는 방법</title>
+    <!-- 1) jQuery cdn 사이트에서 src 복사후 사용 -->
+    <!-- 2) jQuery cdn 사이트에서 src 복사후 js파일을 만든후 사용 -->
+    <script src="jQ.js"></script>
+    <style>
+        .myred{border: 3px solid red;}
+        .mycyan{background-color: cyan;}
+    </style>
+</head>
+<body>
+    <h1 id="first">Lorem ipsum dolor sit amet consectetur.</h1>
+    <h1 id="second">Lorem ipsum dolor sit amet consectetur.</h1>
+    <h1 class="myred mycyan">1</h1>
+
+    <script>
+        $('#first').css('color','red').addClass('myred')
+
+        let first = document.getElementById('second')
+        first.setAttribute('class','myred')
+        first.style.color = 'blue'
+        // 클래스명 추가할 때 class="클래스1 클래스2 .."이러한 형태이기 때문에
+        // ' 추가할클래스명' 처럼 추가클래스명 앞에 공백칸이 필요하다
+        first.className += ' mycyan'
+    </script>
+</body>
+</html>

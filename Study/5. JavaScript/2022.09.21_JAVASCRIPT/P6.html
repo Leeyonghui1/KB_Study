@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        //  num :: 매개변수
+        //  반환형을 표시하지 않아도 된다
+        function Abs(num)
+        {
+            if(num<0)
+                num *= -1
+            return num
+        }
+        console.log(Abs(-1))
+
+        // 콜백함수 :: 함수를 매개변수로 받는 함수
+        // 특정 메시지를 출력하는 함수를 특정 횟수만큼 호출
+        function printConsole(func, count)
+        {
+            for(let i = 0 ; i < count ; i++)
+                func()
+        }
+        function sayHello()
+        {
+            console.log('안녕하세요')
+        }
+        printConsole(sayHello,5)
+        printConsole(function() {console.log('ldj')}, 10)
+
+
+    </script>
+</body>
+</html>

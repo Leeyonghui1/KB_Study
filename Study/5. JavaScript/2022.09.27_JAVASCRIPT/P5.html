@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히스토리 이용한 페이지 이동</title>
+    <style>
+        /* cursor: pointer :: 마우스 포인터 손가락모양 설정 */
+        h1:hover{color: red; cursor: pointer;}
+        h2:hover{color: blue; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <h1>History2로 이동</h1>
+    <a href="P5[2].html">P5[2]로 이동</a>
+    <h2>앞으로 가</h2>
+    <script>
+        document.querySelector('h1').onclick = function()
+        {
+            location.href = 'P5[2].html'
+        }
+        // go :: 전전단계나 앞앞단계등으로 다양하게 이동가능
+        document.querySelector('h2').onclick = function()
+        {
+            history.go(1)
+        }
+    </script>
+    
+</body>
+</html>

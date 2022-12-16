@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <script src="P1[2].json"></script>
+    <script>
+        window.onload = function()
+        {
+            let h1Tag = document.createElement('h1')
+            h1Tag.textContent = '오늘의 점심 뽑기'
+            h1Tag.style.color = 'red'
+            document.body.appendChild(h1Tag)
+
+            let btn_start = document.createElement('button')
+            btn_start.textContent = '시작'
+            document.body.appendChild(btn_start)
+
+            let space = document.createElement('span')
+            space.innerHTML = '&nbsp;'
+            document.body.appendChild(space)
+
+            let btn_stop = document.createElement('button')
+            btn_stop.textContent = '뽑기'
+            document.body.appendChild(btn_stop)
+
+            let lunch = document.createElement('img')
+            let result = document.createElement('h1')
+
+            let lunch_img = []
+            lunch_img[0] = 햄버거
+            lunch_img[1] = 피자
+            lunch_img[2] = 치킨
+            lunch_img[3] = 카츠
+
+            let ran_img
+            let pre = -1
+            btn_start.onclick = ()=>
+            {
+                lunch.height = 300
+                lunch.width = 300
+                let idx = Math.floor(Math.random()*lunch_img.length)
+                while(pre == idx)
+                {
+                    idx = Math.floor(Math.random()*lunch_img.length)
+                }
+                lunch.src = lunch_img[idx].사진
+                document.body.appendChild(lunch)
+                result.textContent = lunch_img[idx].이름
+                document.body.appendChild(result)
+                ran_img = setInterval(() => {
+                    clearInterval(ran_img)
+                    btn_start.click()
+                }, 100)
+            }
+            
+            btn_stop.onclick = ()=>
+            {
+                clearInterval(ran_img)
+            }
+            document.body.appendChild(document.createElement('br'))
+            document.body.appendChild(document.createElement('br'))
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

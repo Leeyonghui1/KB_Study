@@ -1,0 +1,32 @@
+지구 =
+{
+    이름 : '지구',
+    사진 : 'https://astro.kasi.re.kr/file/astro_page/495773655269005.jpg'
+
+}
+
+달 = 
+{
+    이름 : '달',
+    사진 : 'https://www.sciencetimes.co.kr/wp-content/uploads/2017/01/333524.jpg'
+
+}
+
+태양 =
+{
+    이름 : '태양',
+    사진 : 'https://w.namu.la/s/9afb98197608c35fbba5555619591880d66f4b8908095b367b9f50b1006d203c623bbbf59dd1255bb13da7bd10dd8c39953fb2ff821159ab0609ddcf6d3684f347195688de0a9d4e82a60f3729202e16d18517afc01b009a57875d27cf4c34e782d5a8436d7b3108845485e828028ef3'
+
+}
+
+화성 = 
+{
+    이름 : '화성',
+    사진 : 'https://images.chosun.com/resizer/gSTP6M0dLNHBRcPkgA7rzfMla7k=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/CYOVRPQ7LJF2RBUCPG3TGYI66M.jpg'
+}
+
+배경 = 
+{
+    이름 : '배경',
+    사진 : 'nightsky.jpg'
+}

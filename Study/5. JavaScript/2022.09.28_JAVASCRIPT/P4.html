@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>head태그 안 script에서 jQ</title>
+    <script src="jQ.js"></script>
+    <script>
+        // $().ready(function(){}) = $(function(){}) 
+        // $().ready(function(){}) = window.onload=function(){}
+        /*
+        $().ready(
+            function()
+            {
+                // 이벤트 추가
+                // 클릭이벤트 :: on 혹은 click
+                // 다른이벤트 :: on 함수
+                $('#hello').css('color','gold').on('click',function(){alert('헬로')})
+                $('#world').click(function(){alert('안녕')})
+            }
+        )
+        */
+        $(function()
+        {
+            $('#hello').css('color','gold').on('click',function(){alert('헬로')})
+            $('#world').click(function(){alert('안녕')})
+        })
+    </script>
+</head>
+<body>
+    <h1 id="hello">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="world">Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>

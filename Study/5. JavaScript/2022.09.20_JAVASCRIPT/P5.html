@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형 변환</title>
+</head>
+<body>
+    <script>
+        let num = prompt('숫자 입력하기')  // num :: 문자열
+        num %= 12  // num :: 문자열
+        num++ // num :: 자동으로 숫자로 형변환
+        num = Number(num) // num :: 숫자(Number)타입
+        console.log(num)
+
+        // 결론 : 입력받는 값은 기본적으로 문자
+        // 숫자로 쓰고 싶다면 별도의 처리가 필요하다
+
+        let test = 20
+        if(test=='20')
+             console.log('==은 값을 비교')
+        if(test==='20') 
+             console.log('타입도 비교함')
+
+        console.log(test=='20')   // true
+        console.log(test==='20')  // flase
+
+        
+        // T1.Q2문제를 if문으로 푼다면
+        let mymonth = prompt('몇월생?')
+        document.querySelector('body').style.backgroundRepeat = "no-repeat"
+        if(mymonth == 12 || mymonth == 1 || mymonth == 2)
+            document.querySelector('body').background = 'data:image/jpeg;base64,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'
+        else if(mymonth >= 3 && mymonth <= 5)
+            document.querySelector('body').style.backgroundColor = 'green'
+        else if(mymonth >= 6 && mymonth <= 8)
+            document.querySelector('body').style.backgroundColor = 'blue'
+        else if(mymonth >= 9 && mymonth <= 11)
+            document.querySelector('body').style.backgroundColor = 'orange'
+            
+    </script>
+</body>
+</html>

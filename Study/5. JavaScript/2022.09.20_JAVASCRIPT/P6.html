@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 자료형</title>
+</head>
+<body>
+    <script>
+        // Boolean, String, Number, Object
+        // Null, Undefined, Symbol
+
+        // Boolean
+        // 숫자 0이나, null 등 :: flase
+        // 나머진 모두 true
+        console.log(Boolean(0))
+        console.log(Boolean(null))
+        console.log(Boolean(''))
+        // NaN :: 문자를 숫자로 바꾸려고 할 때 생김
+        console.log(Boolean(NaN))
+        console.log(Boolean(undefined))
+        console.log(Boolean(' ')) // space 1칸 -> true
+
+        let num = 12
+        num = String(num)
+        num += 14
+        console.log(num)
+
+        // 문자열의 길이와 문자열 일부를 찾는 방법
+        let sentense = "안녕하세요 반갑습니다."
+        console.log(sentense.length) // 문자열 길이 출력
+        console.log(sentense[0])  // 첫번째 글자
+
+        // 배열
+        // 처음에 아무것도 없는 배열 만든 후 특정 인덱스에 값 추가
+        // 배열의 크기를 처음부터 지정하는 방식은 없다
+        let arr1 = []
+        // 배열에는 어떤 값도 다 들어갈 수 있다.
+        let arr2 = [1, "안녕", arr1, null]
+    </script>
+</body>
+</html>

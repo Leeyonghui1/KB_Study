@@ -1,0 +1,23 @@
+햄버거 =
+{
+    이름 : '햄버거',
+    사진 : 'https://w.namu.la/s/126ed0de470ffd19954dde2dcdf4684286c506b774a2c1cf713c04309cf94ce26946aa03ec30a4a8a93e8e645c7bf361347807b0654a312c6e58c34e8f6bbf981e62221fd168b09483d8d2ad97710a05ec1dede2c2cc63bfa8f305a6e00b3247'
+}
+
+피자 = 
+{
+    이름 : '피자',
+    사진 : 'https://w.namu.la/s/8c2aebf04d4c6e0ae24ebf3b3789cb064f353da40f0a2916630ee33cc34742414ac8427b8765569e84d615a24cac7bc389ada2e5c60579541ea8b41be9b22db66f14a3db5f981a2cc93bba229a752932915474cffbb7d3fe3cc41022e163a2b2b720c118309e131b9dbe8fdfda5c449b'
+}
+
+치킨 =
+{
+    이름 : '치킨',
+    사진 : 'https://file.mk.co.kr/meet/neds/2022/08/image_readtop_2022_697996_16599475315131523.jpg'
+}
+
+카츠 =
+{
+    이름 : '카츠',
+    사진 : 'https://cdn.ppomppu.co.kr/zboard/data3/2020/0618/20200618231912_kyuswzgd.jpg'
+}

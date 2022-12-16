@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체생성</title>
+    <script src="P3.json"></script>
+    <script>
+        // 자바스크립트 객체(JSON)
+        // "속성명 : 값" 처럼 직관적으로 데이터를 저장
+        // xml 형태와 같이 많이 쓰이는 파일처리 데이터 방식 
+        window.onload = function()
+        {
+            let btn = document.querySelector('button')
+            let mylunch = document.querySelector('img')
+            let result = document.querySelector('#result')
+
+            // P2.html 에서 배열변수를 선언하고 배열에 이미지 사진을 넣을때
+            // 이름과 사진이 다르게 배치하는 오류가 발생할 수 있기때문에
+            // 이러한 오류를 제어하기위해 객체를 사용한다
+            //  객체타입 변수 생성
+            let 국수 = {
+                이름 : '국수',
+                사진 : 'https://mblogthumb-phinf.pstatic.net/MjAxNzA4MjRfMjk3/MDAxNTAzNTYwNzU1NjMx.kex5hkChQEl94rEODebqkzzKbFB4C9Z5UwSjQy4t1_Ig.PaJXXk7wPjrWluQ-MYY2dVf8s0HsCEBTyb6y0Cm2xKUg.JPEG.saeragem/%EC%9D%B4%EB%AF%B8%EC%A7%801.jpg?type=w800'
+            }
+            let 햄버거 = {
+                이름 : '햄버거',
+                사진 : 'https://biz.chosun.com/resizer/e_hRq82103yFIU6IWerqAJme8To=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosunbiz/PDA6T744P5BLTDWSLFXHTGMVSM.png'
+            }
+            let 샌드위치 = {
+                이름 : '샌드위치',
+                사진 : 'https://m.subway.co.kr/upload/menu/Subway-Club%E2%84%A2_20211231095518589.png'
+            }
+
+            // 배열 인덱스에 객체변수를 사용
+            let lunch = [국수,햄버거,샌드위치]
+            // 배열 인덱스에 객체를 만들어서 바로 넣기
+            lunch[3] = {
+                이름 : '피자',
+                사진 : 'https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg'
+            }
+            lunch[4] = 민초
+
+            btn.textContent = '점심선택'
+            mylunch.src = ''
+            mylunch.width = 0
+            mylunch.height = 0
+            mylunch.style.display = 'block'
+            result.textContent = ''
+            btn.onclick = ()=>
+            {
+                mylunch.width = 300
+                mylunch.height = 300
+                let idx = Math.floor(Math.random()*lunch.length)
+                mylunch.src = lunch[idx].사진
+                result.textContent = lunch[idx].이름
+                // result.textContent = lunch[idx]['이름'] :: 가능
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>오늘의 점심은?</h1>
+    <button></button>
+    <img src="" alt="">
+    <h1 id="result"></h1>
+</body>
+</html>

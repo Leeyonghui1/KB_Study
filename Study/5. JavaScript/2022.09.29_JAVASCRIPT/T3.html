@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3 (리액트실습)</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        let name = prompt('이름을 입력하세요.')
+        let images = []
+        images[0] = {
+            이름 : '햄버거',
+            사진 : 'http://www.thekpm.com/news/photo/202201/106072_86332_1730.jpg'
+        }
+        images[1] = {
+            이름 : '피자',
+            사진 : 'https://img.hankyung.com/photo/202108/99.26501439.1-1200x.jpg'
+        }
+        images[2] = {
+            이름 : '치킨',
+            사진 : 'http://www.bhc.co.kr/upload/bhc/menu/410x271_view_%EC%B9%98%ED%90%81%EB%8B%B9%ED%95%9C%EB%A7%88%EB%A6%AC(0).png'
+        }
+
+        for (const iterator of images) {
+
+            if(iterator.이름 == name)
+            {
+                let component = 
+                <div>
+                    <h1>{iterator.이름}</h1>
+                    <img src={iterator.사진}/>
+                </div>
+                const container = document.getElementById('root')
+                ReactDOM.render(component, container)
+            }
+        }
+    </script>
+</body>
+</html>

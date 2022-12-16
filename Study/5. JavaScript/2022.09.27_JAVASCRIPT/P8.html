@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // 매개변수 개수를 모를때
+        // 1) ...
+        function mysum(...items)
+        {
+            let sum = 0
+            for (const iterator of items) {
+                sum+=iterator
+            }
+            console.log('총합: '+sum)
+        }
+        // 2) arguments
+        function mysum2()
+        {
+            let sum = 0
+            for (const iterator of arguments) {
+                sum+=iterator
+            }
+            console.log(`총합: ${sum}`)
+        }
+        mysum(1,2,3)
+        mysum2(1,2,3,4)
+
+        // 디폴트 매개변수
+        function mypower(a=1) // 매개변수가 없을 때 자동으로 설정한값
+        {
+            if(a==1)
+                console.log(1)
+            else
+                console.log(a*a)
+        }
+        mypower() // 매개변수 없으면 매개변수에 자동으로 a=1
+        mypower(10) // 매개변수가 있으니 a에 10 대입
+
+        function justprint(...items)
+        {
+            console.log(items)
+        }
+        const arr = [1,2,3,4,5]
+        justprint(arr) // 배열(arr) 한 덩어리를 넣음
+        justprint(...arr) // 배열(arr)에 있는 각각의 값을 넣음
+    </script>
+</body>
+</html>

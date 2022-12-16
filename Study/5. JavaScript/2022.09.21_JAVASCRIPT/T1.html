@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+<body>
+    <input type="text" id="입력">
+    <button id="결과">결과</button>
+    <h1 id="출력"></h1>
+    <script>
+        let input = document.querySelector('#입력')
+        let result = document.querySelector('#결과')
+        let print = document.querySelector('#출력')
+        
+        result.onclick = function () {
+            let num = input.value
+            console.log(num)
+            if(num == 0)
+            print.textContent = '제로'
+            else if(num%2 == 0)
+            print.textContent = '짝수'
+            else if(num%2 == 1)
+            print.textContent = '홀수'
+            else
+            print.textContent = '기타 : ' + num
+        }
+    </script>
+</body>
+</html>

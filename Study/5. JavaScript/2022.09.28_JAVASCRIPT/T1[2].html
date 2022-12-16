@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1[2] js문법으로 풀기</title>
+    <style>
+        .max{color: deepskyblue;}
+    </style>
+
+    <script>
+        window.onload = function()
+        {
+            let bigCountLaw = prompt('주사위 시도 횟수')
+            console.log(bigCountLaw)
+            let emptyArray = [0,0,0,0,0,0]
+            for(let i = 0 ; i < bigCountLaw ; i++)
+            {
+                let random = Math.floor(Math.random()*6)
+                emptyArray[random]++
+            }
+            let Tag_h1_1 = document.querySelector('h1.a1')
+            let Tag_h1_2 = document.querySelector('h1.a2')
+            let Tag_h1_3 = document.querySelector('h1.a3')
+            let Tag_h1_4 = document.querySelector('h1.a4')
+            let Tag_h1_5 = document.querySelector('h1.a5')
+            let Tag_h1_6 = document.querySelector('h1.a6')
+            
+            Tag_h1_1.innerHTML = emptyArray[0]
+            Tag_h1_2.innerHTML = emptyArray[1]
+            Tag_h1_3.innerHTML = emptyArray[2]
+            Tag_h1_4.innerHTML = emptyArray[3]
+            Tag_h1_5.innerHTML = emptyArray[4]
+            Tag_h1_6.innerHTML = emptyArray[5]
+
+
+            let Tag_h2_1 = document.querySelector('h2.a1')
+            let Tag_h2_2 = document.querySelector('h2.a2')
+            let Tag_h2_3 = document.querySelector('h2.a3')
+            let Tag_h2_4 = document.querySelector('h2.a4')
+            let Tag_h2_5 = document.querySelector('h2.a5')
+            let Tag_h2_6 = document.querySelector('h2.a6')
+            
+            Tag_h2_1.innerHTML = (emptyArray[0]/bigCountLaw)*100+'%'
+            Tag_h2_2.innerHTML = (emptyArray[1]/bigCountLaw)*100+'%'
+            Tag_h2_3.innerHTML = (emptyArray[2]/bigCountLaw)*100+'%'
+            Tag_h2_4.innerHTML = (emptyArray[3]/bigCountLaw)*100+'%'
+            Tag_h2_5.innerHTML = (emptyArray[4]/bigCountLaw)*100+'%'
+            Tag_h2_6.innerHTML = (emptyArray[5]/bigCountLaw)*100+'%'
+            
+            let max = 0
+            let maxIndex = 0
+            for (const iterator of emptyArray) {
+                if(max < iterator)
+                {
+                    max = iterator
+                }
+            }
+            if(max == emptyArray[0])
+            {
+                Tag_h1_1.setAttribute('class','max')
+                Tag_h2_1.setAttribute('class','max')
+            }
+            else if(max == emptyArray[1])
+            {
+                Tag_h1_2.setAttribute('class','max')
+                Tag_h2_2.setAttribute('class','max')
+            }
+            else if(max == emptyArray[2])
+            {
+                Tag_h1_3.setAttribute('class','max')
+                Tag_h2_3.setAttribute('class','max')
+            }
+            else if(max == emptyArray[3])
+            {
+                Tag_h1_4.setAttribute('class','max')
+                Tag_h2_4.setAttribute('class','max')
+            }
+            else if(max == emptyArray[4])
+            {
+                Tag_h1_5.setAttribute('class','max')
+                Tag_h2_5.setAttribute('class','max')
+            }
+            else if(max == emptyArray[5])
+            {
+                Tag_h1_6.setAttribute('class','max')
+                Tag_h2_6.setAttribute('class','max')
+            }
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h1>1</h1>
+    <h1 class="a1">0</h1>
+    <h2 class="a1">0</h2>
+    <h1>2</h1>
+    <h1 class="a2">0</h1>
+    <h2 class="a2">0</h2>
+    <h1>3</h1>
+    <h1 class="a3">0</h1>
+    <h2 class="a3">0</h2>
+    <h1>4</h1>
+    <h1 class="a4">0</h1>
+    <h2 class="a4">0</h2>
+    <h1>5</h1>
+    <h1 class="a5">0</h1>
+    <h2 class="a5">0</h2>
+    <h1>6</h1>
+    <h1 class="a6">0</h1>
+    <h2 class="a6">0</h2>
+</body>
+</html>

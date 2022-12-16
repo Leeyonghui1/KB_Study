@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2 Solution</title>
+</head>
+<body>
+    <button id="gawi">가위</button>
+    <button id="bawi">바위</button>
+    <button id="bo">보</button>
+    <p>나</p>
+    <img src="" alt="">
+    <p>컴퓨터</p>
+    <img src="" alt="">
+   
+    <h1></h1>
+    <script>
+        let myresultimg = document.querySelectorAll('img')[0]
+        let pcresultimg = document.querySelectorAll('img')[1]
+        let gbb = [
+        
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9__C0fEBjn0D79hJYNK52liYfmC6lUOS5w&usqp=CAU',
+
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88tsMxUxoy3ZuLnRXZsgWzGemAnIoTILuGZHdoOwpOrILCiBIjd13edydKgeiC27nTD0&usqp=CAU',
+            
+            'https://blog.kakaocdn.net/dn/bmjB2s/btqXHhp6kpG/TH14W4U612SxKo9uuR2sB0/img.png'
+        ]
+    
+        const GAWI = 0
+        const BAWI = 1
+        const BO = 2
+
+        let result = document.querySelector('h1')
+        document.querySelector('#gawi').onclick = fnc_result
+        document.querySelector('#bawi').onclick = fnc_result
+        document.querySelector('#bo').onclick = fnc_result
+
+        function fnc_result(mychoice)
+        {
+            let pc_choice = Math.floor(Math.random()*3)
+            pcresultimg.src = gbb[pc_choice]
+        
+            
+            switch (mychoice.target.id) 
+            {
+                case 'gawi':
+                    console.log('가위')
+                    myresultimg.src = gbb[GAWI]
+                    // 조작
+                    pc_choice = BAWI
+                    pcresultimg.src = gbb[pc_choice]
+                    switch(pc_choice)
+                    {
+                        case GAWI:
+                            result.textContent = '비김'
+                            break
+                        case BAWI:
+                            result.textContent = '짐'
+                            break 
+                        case BO:
+                            result.textContent = '이김'
+                            break
+                        default:
+                            break
+                    }
+                    break
+                case 'bawi':
+                    console.log('바위')
+                    myresultimg.src = gbb[BAWI]
+                    // 조작
+                    pc_choice = BO
+                    pcresultimg.src = gbb[pc_choice]
+                    switch(pc_choice)
+                    {
+                        case GAWI:
+                            result.textContent = '이김'
+                            break
+                        case BAWI:
+                            result.textContent = '비김'
+                            break 
+                        case BO:
+                            result.textContent = '짐'
+                            break
+                        default:
+                            break
+                    }
+                    break
+                case 'bo':
+                    console.log('보')
+                    myresultimg.src = gbb[BO]
+                    // 조작
+                    pc_choice = GAWI
+                    pcresultimg.src = gbb[pc_choice]
+                    switch(pc_choice)
+                    {
+                        case GAWI:
+                            result.textContent = '짐'
+                            break
+                        case BAWI:
+                            result.textContent = '이김'
+                            break 
+                        case BO:
+                            result.textContent = '비김'
+                            break
+                        default:
+                            break
+                    }
+                    break
+            }
+        }
+
+    </script>
+</body>
+</html>

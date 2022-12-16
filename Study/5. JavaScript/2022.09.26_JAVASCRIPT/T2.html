@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2 aa</title>
+</head>
+<body>
+    <script>
+        function nextRandomInteger(limit)
+        {
+            return Math.round(Math.random()*limit)
+        }
+        
+        function randomSpeed(maxSpeed)
+        {
+            return Math.random()*maxSpeed - Math.random()*maxSpeed
+        }
+
+        let alphabet = 'ABCDEFGHㄱㄴㄷㄹㅁㅂㅅㅇΣΦΨΩαβγδ'
+        let input_al = document.createElement('input')
+        let space = document.createElement('span')
+        let btn = document.createElement('button')
+        space.innerText = ' '
+        btn.innerText = '글자추가'
+        document.body.appendChild(input_al)
+        document.body.appendChild(space)
+        document.body.appendChild(btn)
+        document.body.appendChild(document.createElement('br'))
+        
+        
+        btn.onclick = ()=>
+        {
+            /*
+            alphabet += input_al.value
+            console.log(alphabet)
+            */
+            let new_text = input_al.value
+            movigTexts.push(new MovigText(new_text))
+        }
+
+        let randomAlphabet = 
+        (
+            function()
+            {
+                return function()
+                {
+                    return alphabet[nextRandomInteger(alphabet.length-1)]               
+                }
+            }
+            )()
+            
+        let canvasWidth = 700
+        let canvasHeight = 400
+        
+        let color_arr = ['red', 'green', 'blue', 'pink']
+        function MovigText(input)
+        {
+            this.x = nextRandomInteger(canvasWidth)
+            this.y = nextRandomInteger(canvasHeight)
+            this.vx = randomSpeed(10)
+            this.vy = randomSpeed(10)
+            this.text = document.createElement('h1')
+            this.text.innerText = input
+            this.text.style.position = 'fixed'
+            document.body.appendChild(this.text)
+            setInterval(() => {
+            let num_color = Math.floor(Math.random()*color_arr.length)
+            this.text.style.color = color_arr[num_color]
+        }, 10)
+        }
+        
+        MovigText.prototype.move =
+        function()
+        {
+            if(this.x < 0 || this.x > canvasWidth)
+            this.vx *= -1
+            if(this.y < 0 || this.y > canvasHeight)
+            this.vy *= -1
+            this.x += this.vx
+            this.y += this.vy
+            this.text.style.left = this.x+'px'
+            this.text.style.top = this.y+'px'
+        }
+        
+        let movigTexts = []
+        for(let i = 0 ; i < 100 ; i++)
+            movigTexts.push(new MovigText(randomAlphabet()))
+            
+        setInterval(function(){
+            for(let i in movigTexts)
+            movigTexts[i].move()
+        },1000/30)
+        
+        
+        setInterval(() => {
+            let num_back = Math.floor(Math.random()*color_arr.length)
+            document.body.style.background = color_arr[num_back]
+        }, 1000)
+        
+        </script>
+    
+</body>
+</html>

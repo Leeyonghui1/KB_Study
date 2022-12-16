@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0929 Test 3 Solution</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        let name = prompt('이름이 뭐에요?')
+        let imageUrl
+        let component 
+        if(name == '개')
+        {
+            imageUrl = 'https://yt3.ggpht.com/49Zod3k6JNnbqLQmU8FCJkOSbQ9L5vRu4ZmLnH54HhhQrjgcmic-k83HGFdp7mUmIsdoh2VBmw=s900-c-k-c0x00ffffff-no-rj'
+        }
+        else if(name == '토끼')
+        {
+            imageUrl = 'https://www.sciencetimes.co.kr/wp-content/uploads/2017/09/1_%EC%9C%A0%EB%9F%BD%ED%86%A0%EB%81%BC.jpg'
+        }
+        else
+        {
+            imageUrl = 'https://www.korea.kr/goNewsRes/attaches/editor/2019.01/27/20190127224207298_MVBHMYGV.jpg'
+        }
+        component = 
+        <div>
+            <h1>리액트 시작({name})</h1>
+            <img src={imageUrl}/>
+        </div>
+        const container = document.getElementById('root')
+        ReactDOM.render(component, container)
+    </script>
+</body>
+</html>

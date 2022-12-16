@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2 승부조작 가위바위보</title>
+</head>
+<body>
+    <button id="gawi">가위</button>
+    <button id="bawi">바위</button>
+    <button id="bo">보</button>
+    <p>나</p>
+    <img src="" alt="">
+    <p>컴퓨터</p>
+    <img src="" alt="">
+   
+    <h1></h1>
+    <script>
+        let myresultimg = document.querySelectorAll('img')[0]
+        let pcresultimg = document.querySelectorAll('img')[1]
+        let gbb = [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9__C0fEBjn0D79hJYNK52liYfmC6lUOS5w&usqp=CAU',
+
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88tsMxUxoy3ZuLnRXZsgWzGemAnIoTILuGZHdoOwpOrILCiBIjd13edydKgeiC27nTD0&usqp=CAU',
+            
+            'https://blog.kakaocdn.net/dn/bmjB2s/btqXHhp6kpG/TH14W4U612SxKo9uuR2sB0/img.png'
+        ]
+        
+        const GAWI = 0
+        const BAWI = 1
+        const BO = 2
+
+        let result = document.querySelector('h1')
+        document.querySelector('#gawi').onclick = fnc_result
+        document.querySelector('#bawi').onclick = fnc_result
+        document.querySelector('#bo').onclick = fnc_result
+        
+        function fnc_result(mychoice)
+        {
+            switch (mychoice.target.id) 
+            {
+                case 'gawi':
+                    console.log('가위')
+                    myresultimg.src = gbb[GAWI]
+                    pcresultimg.src = gbb[BAWI]
+                    result.textContent = '짐'
+                    break
+                case 'bawi':
+                    console.log('바위')
+                    myresultimg.src = gbb[BAWI]
+                    pcresultimg.src = gbb[BO]
+                    result.textContent = '짐'
+                    break
+                case 'bo':
+                    console.log('보')
+                    myresultimg.src = gbb[BO]
+                    pcresultimg.src = gbb[GAWI]
+                    result.textContent = '짐'
+                    break
+            }
+        }
+
+    </script>
+</body>
+</html>

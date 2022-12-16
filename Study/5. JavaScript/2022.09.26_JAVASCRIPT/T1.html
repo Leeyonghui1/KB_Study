@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+<body>
+    <script>
+        let btn = document.createElement('button')
+        btn.innerText = '무작위 로또 번호 생성'
+        document.body.appendChild(btn)
+        document.body.appendChild(document.createElement('br'))
+
+        function lotto()
+        {
+            let arr = []
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                let num = Math.floor((Math.random()*45)+1)
+                arr[i] = num
+                for(let j = 0 ; j < i ; j++)
+                {
+                    if(arr[j] == arr[i])
+                    {
+                        i--
+                        break
+                    }
+                }
+            }
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                for(let j = 0 ; j < 6 ; j++)
+                {
+                    if(arr[j] > arr[j+1])
+                    {
+                        let tmp = arr[j]
+                        arr[j] = arr[j+1]
+                        arr[j+1] = tmp
+                    }
+                }
+            }
+            return arr
+        }
+
+        btn.onclick = ()=>
+        {
+            let h1Tag = document.createElement('h1')
+            h1Tag.innerText = lotto()
+            document.body.appendChild(h1Tag)
+        }
+        
+        let input_start = document.createElement('input')
+        document.body.appendChild(input_start)
+        let space = document.createElement('span')
+        let btn2 = document.createElement('button')
+        space.innerText = ' '
+        btn2.innerText = '특정번호부터'
+        document.body.appendChild(space)
+        document.body.appendChild(btn2)
+        document.body.appendChild(document.createElement('br'))
+
+        function lotto_2(start_num)
+        {
+            let arr_2 = []
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                let num = Math.floor((Math.random()*45)+start_num)
+                while(num > 45)
+                {
+                    num = Math.floor((Math.random()*45)+start_num)
+                }
+                arr_2[i] = num
+                for(let j = 0 ; j < i ; j++)
+                {
+                    if(arr_2[j] == arr_2[i])
+                    {
+                        i--
+                        break
+                    }
+                }
+            }
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                for(let j = 0 ; j < 6 ; j++)
+                {
+                    if(arr_2[j] > arr_2[j+1])
+                    {
+                        let tmp = arr_2[j]
+                        arr_2[j] = arr_2[j+1]
+                        arr_2[j+1] = tmp
+                    }
+                }
+            }
+            return arr_2
+        }
+
+        btn2.onclick = ()=>
+        {
+            let h1Tag_2 = document.createElement('h1')
+            let st_num = input_start.value
+            console.log(st_num)
+            document.body.textContent = `${st_num}이상 숫자`
+            h1Tag_2.innerText = lotto_2(Number(st_num))
+            document.body.appendChild(h1Tag_2)
+        }
+
+        let btn3 = document.createElement('button')
+        btn3.innerText = '시작난수뽑기'
+        document.body.appendChild(btn3)
+
+        function lotto_3(start_num)
+        {
+            let arr_3 = []
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                let num = Math.floor((Math.random()*45)+start_num)
+                while(num > 45)
+                {
+                    num = Math.floor((Math.random()*45)+start_num)
+                }
+                arr_3[i] = num
+                for(let j = 0 ; j < i ; j++)
+                {
+                    if(arr_3[j] == arr_3[i])
+                    {
+                        i--
+                        break
+                    }
+                }
+            }
+            for(let i = 0 ; i < 7 ; i++)
+            {
+                for(let j = 0 ; j < 6 ; j++)
+                {
+                    if(arr_3[j] > arr_3[j+1])
+                    {
+                        let tmp = arr_3[j]
+                        arr_3[j] = arr_3[j+1]
+                        arr_3[j+1] = tmp
+                    }
+                }
+            }
+            return arr_3
+        }
+
+        btn3.onclick = ()=>
+        {
+            let h1Tag_3 = document.createElement('h1')
+            let ran_num = Math.floor((Math.random()*45)+1)
+            console.log(ran_num)
+            document.body.innerText = `시작랜덤숫자는 ${ran_num}`
+            h1Tag_3.innerText = lotto_3(Number(ran_num))
+            document.body.appendChild(h1Tag_3)
+        }
+  
+    </script>
+</body>
+</html>

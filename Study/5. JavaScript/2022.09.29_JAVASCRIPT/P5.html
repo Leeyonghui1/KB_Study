@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리액트2) 이미지</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const imageUrl = 'https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png'
+        const name = '이동준'
+        const component = 
+        // 태그를 열면 무조건 닫아줘야한다
+        // 그래서 img태그안 마지막 "/"을 적든
+        // "</img>"을 적어줘야한다
+        <div>
+            <h1>리액트 시작({name})</h1>
+            <img src={imageUrl}/>
+        </div>
+        const container = document.getElementById('root')
+        ReactDOM.render(component, container)
+    </script>
+</body>
+</html>
