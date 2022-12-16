@@ -1,0 +1,5 @@
+﻿  Lotto.c
+C:\Users\용이\Desktop\과제 난수생성(로또)_최종_수정\Lotto\Lotto\Lotto.c(8,1): warning C4005: 'max': 매크로 재정의
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h(1282): message : 'max'의 이전 정의를 참조하십시오.
+C:\Users\용이\Desktop\과제 난수생성(로또)_최종_수정\Lotto\Lotto\Lotto.c(307,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Lotto.vcxproj -> C:\Users\용이\Desktop\과제 난수생성(로또)_최종_수정\Lotto\x64\Debug\Lotto.exe
