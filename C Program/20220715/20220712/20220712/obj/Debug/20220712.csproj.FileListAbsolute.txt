@@ -1,0 +1,11 @@
+C:\Users\KB\Desktop\수업\20220712\20220712\bin\Debug\20220712.exe.config
+C:\Users\KB\Desktop\수업\20220712\20220712\bin\Debug\20220712.exe
+C:\Users\KB\Desktop\수업\20220712\20220712\bin\Debug\20220712.pdb
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\_20220712.Properties.Resources.resources
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.exe
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\20220712.pdb
+C:\Users\KB\Desktop\수업\20220712\20220712\obj\Debug\_20220712.Form1.resources

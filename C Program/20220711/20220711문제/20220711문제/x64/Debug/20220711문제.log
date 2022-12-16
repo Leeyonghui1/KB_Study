@@ -1,0 +1,9 @@
+﻿  main.c
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr5.h(15,12): warning C4098: 'Sum': 'void' 함수에서 값을 반환하고 있습니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr1.h(24): warning C4716: 'calcul': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr4.h(8): warning C4716: 'ColorSet': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr2.h(25): warning C4715: 'time': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr8.h(16): warning C4716: 'pro1': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr7.h(37): warning C4716: 'cal': 값을 반환해야 합니다.
+C:\Users\KB\Desktop\수업\20220711문제\20220711문제\pr10.h(11): warning C4715: 'pattern': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  20220711문제.vcxproj -> C:\Users\KB\Desktop\수업\20220711문제\x64\Debug\20220711문제.exe
