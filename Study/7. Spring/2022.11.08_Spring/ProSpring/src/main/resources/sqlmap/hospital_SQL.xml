@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hospital">
+	<!-- 아이디 중복 확인 -->
+	<select id="id_check" resultType="Integer">
+		<![CDATA[
+			select count(*) from member where id=#{id}
+		]]>
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="join" parameterType="hashMap">
+		<![CDATA[
+			insert into member 
+			(name, id, pw, gender, email, phone, birth, post, addr, pt_code, m_code, jpo_code) 
+			values 
+			(#{name}, #{id}, #{pw}, #{gender}, #{email}, #{phone}, #{birth}, #{post}, #{addr}, #{pt_code}, #{m_code}, #{jpo_code})
+		]]>
+	</insert>
+	
+	<!-- 로그인 -->
+	<select id="login" resultType="member.MemberDTO">
+		<![CDATA[
+			select * from member where id=#{id} and pw=#{pw}
+		]]>
+	</select>
+	
+	<!-- 회원 상세 화면 -->
+	<!-- select * from member where id=#{id} -->
+	<select id="detail" resultType="member.MemberDTO">
+		<![CDATA[
+			select member.name, id, gender, email, phone, birth, addr, ptype.name pt_code, major.name m_code, jposition.name jpo_code 
+			from member 
+			join ptype on member.pt_code = ptype.pt_code 
+			join major on member.m_code = major.m_code 
+			join jposition on member.jpo_code = jposition.jpo_code 
+			where id=#{id}
+		]]>
+	</select>
+</mapper>

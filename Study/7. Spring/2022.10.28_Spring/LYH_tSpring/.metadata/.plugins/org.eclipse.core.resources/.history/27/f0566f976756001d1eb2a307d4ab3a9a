@@ -1,0 +1,11 @@
+package com.tespring.mspring;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class BookController {
+	@RequestMapping(value="/tcreate", method = RequestMethod.GET)
+	public ModelAndView create() {
+		return new ModelAndView("book/tcreate");
+	}
+}

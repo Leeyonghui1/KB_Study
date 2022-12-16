@@ -1,0 +1,5 @@
+package com.tespring.mspring;
+
+public interface BookService {
+
+}
