@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상조절</title>
+    <style>
+        h1
+        {
+            color: aqua;
+            background-color: rgba(182, 15, 182, 0.712);
+            border: 30px solid #FFFF00;
+        }
+        #opa
+        {
+            /* opacity :: 자식태그에도 영향을줌 */
+            background-color: green;
+            opacity: 0.3;
+        }
+        #alpha
+        {
+            /* alpha :: 자기 자신에게만 적용 */
+            background-color: rgba(0, 255, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <div id="opa">
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div id="alpha">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>

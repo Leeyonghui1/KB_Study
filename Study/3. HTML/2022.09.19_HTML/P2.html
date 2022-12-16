@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴적용</title>
+    <!-- 다운받지 않고 글꼴을 적용할 때는 style태그를 따로 만들어서 적용 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kirang+Haerang:400');
+    </style>
+    <style>
+        /* 다운받은 특정글꼴에 원하는 이름을 설정해서 사용할 수 있음*/
+        @font-face {
+            font-family: 무궁화꽃;
+            src: url('NanumBrush.ttf');
+        }
+        h1{font-family: 무궁화꽃;}
+        /* 컴퓨터에 기본 글꼴 사용할 때 */
+        h2{font-family: 궁서체;}
+        h3{font-family: Kirang Haerang;}
+    </style>
+
+</head>
+<body>
+    <h1>안녕하세요</h1>
+    <h2>안녕하세요</h2>
+    <h3>안녕하세요</h3>
+    <h4>안녕하세요</h4>
+</body>
+</html>

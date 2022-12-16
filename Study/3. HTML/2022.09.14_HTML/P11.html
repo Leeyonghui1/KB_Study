@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상태선택자</title>
+    <style>
+        /* input태그(=checkbox)가 체크된 상태면 높이를 0으로 하고
+            체크상태가 아니면 크기를 키운다. */
+        #first[type=checkbox]:checked+div
+        {
+            height: 0;
+        }
+        #first+div
+        {
+            overflow:hidden;
+            width: 650px;
+            height: 330px;
+            transition-duration: 1s; 
+        }
+
+        #second[type=checkbox]:checked+div
+        {
+            height: 330px;
+        }
+        #second+div
+        {
+            overflow:hidden;
+            width: 650px;
+            height: 0px;
+            transition-duration: 1s; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="first">
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio fugit, excepturi autem nobis repudiandae, deleniti neque, molestiae dicta maiores libero repellendus voluptatum dolor ratione reprehenderit adipisci sed itaque minus modi doloribus officiis facere tempore! Dignissimos et molestias eveniet, consequuntur consequatur excepturi assumenda numquam, doloremque obcaecati iusto modi sint a deserunt esse sunt, maiores quibusdam aliquid voluptatem aperiam accusantium doloribus blanditiis. Soluta cupiditate ea perspiciatis, assumenda deleniti ipsam minus similique obcaecati hic tempora ab, eaque aspernatur nam natus repudiandae quam quo dignissimos sunt cumque mollitia aperiam enim incidunt non quod? Harum at est sed, quo iste animi perspiciatis repellat maxime!</p>
+    </div>
+    
+    <input type="checkbox" name="" id="second">
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio fugit, excepturi autem nobis repudiandae, deleniti neque, molestiae dicta maiores libero repellendus voluptatum dolor ratione reprehenderit adipisci sed itaque minus modi doloribus officiis facere tempore! Dignissimos et molestias eveniet, consequuntur consequatur excepturi assumenda numquam, doloremque obcaecati iusto modi sint a deserunt esse sunt, maiores quibusdam aliquid voluptatem aperiam accusantium doloribus blanditiis. Soluta cupiditate ea perspiciatis, assumenda deleniti ipsam minus similique obcaecati hic tempora ab, eaque aspernatur nam natus repudiandae quam quo dignissimos sunt cumque mollitia aperiam enim incidunt non quod? Harum at est sed, quo iste animi perspiciatis repellat maxime!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치속성_static</title>
+    <style>
+        /* position : static은 안적어도 됨(기본값이라서 생략) */
+        /* 지금 경우 left top에 무슨값을 적어도 박스3개의 위치는 그대로 */
+        /* 왜냐하면 static이 기본값이라서 입력한 순서대로 출력된다 */
+        .box
+        {
+            width: 100px;
+            height: 100px;
+        }
+        .red
+        {
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+        .green
+        {
+            background-color: green;
+            left: 0px;
+            top: 0px;
+        }
+        .blue
+        {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>

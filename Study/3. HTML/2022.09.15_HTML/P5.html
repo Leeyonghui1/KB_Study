@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스속성</title>
+</head>
+<style>
+    #button
+    {
+        width:150px;
+        height:70px;
+        background-color: aquamarine;
+        border: 10px solid pink;
+        border-radius: 30px;
+    }
+    #button>a
+    {
+        /* display를 block으로 하는이유 */
+        /* 넓이 개념을 추가하려고 */
+        /* 원래 a태그는 inline이라서 넓이 개념이 없음 */
+        display: block;
+        /* line-height :: #button의 height랑 값이 동일해야함 */
+        line-height: 70px;
+        text-align: center;
+    }
+</style>
+<body>
+    
+    <div id="button">
+        <a href="">내용</a>
+    </div>
+</body>
+</html>

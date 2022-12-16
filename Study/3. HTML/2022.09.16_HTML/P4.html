@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치속성_absolute</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+        }
+        .red
+        {
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+        .green
+        {
+            background-color: green;
+            left: 50px;
+            top: 10px;
+            position: relative;
+        }
+        .blue
+        {
+            background-color: blue;
+        }
+        /* absolute :: 부모태그의 position이 static일 때 fixed와 동일 */
+        /*        static이외의 position값일때는 부모태그 기준 절대좌표 */
+        .pink
+        {
+            background-color: pink;
+            position: absolute;
+        }
+        .smallBox
+        {
+            width: 30px;
+            height: 30px;
+            left: 10px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="smallBox pink"></div>
+    </div>
+    <div class="box green">
+        <div class="smallBox pink"></div>
+    </div>
+    <div class="box blue"></div>
+</body>
+</html>

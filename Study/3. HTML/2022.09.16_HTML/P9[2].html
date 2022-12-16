@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 표준레이아웃2</title>
+    <style>
+        #warp
+        {
+            width: 560px;
+            margin: 0 auto;
+        }
+        #aside
+        {
+            float: left;
+            width: 200px;
+            background-color: pink;
+        }
+        #section
+        {
+            float: right;
+            width: 330px;
+            background-color: black;
+            color: white;
+        }
+        .clear
+        {
+            clear: both;
+        }
+        #demotext {
+color: #FFFFFF;
+background: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+color: #FF00FF;
+background: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <div id="header">
+            <h1>Header</h1>
+            <div id="demotext">Edit this text</div>
+        </div>
+        <div id="navigation">
+            <h1>Navi</h1>
+        </div>
+        <div id="aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsam culpa, excepturi, consectetur illum
+                sapiente quo nostrum sed repellat amet consequuntur rerum vero ut hic! Dolorem adipisci quis expedita rem?
+            </p>
+        </div>
+        <div id="section">
+            <h1>Section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint iure esse maxime numquam dignissimos
+                quis nam, modi impedit iusto.</p>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

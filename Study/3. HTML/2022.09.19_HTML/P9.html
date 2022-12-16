@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display : grid area(셀 영역 이름 지정하기)</title>
+    <style>
+        #container
+        {
+            display: grid;
+            gap: 10px;
+            /* 화면 크기가 변화해도 셀의 크기비율을 유지 */
+            grid-template-rows: 1fr 200px 1fr;
+            grid-template-columns: 300px 1fr;
+            /* 위와 동일한 의미 */
+            /* grid-template: 1fr 200px 1fr / 300px 1fr; */
+
+            /* grid-area 셀영역이름을 이용해서 셀 배치 */
+            grid-template-areas:
+            'Header Header'
+            'Aside Section'
+            'Footer Footer';
+        }
+        /* grid-area : 특정 셀영역 이름부여(따옴표사용금지) */
+        .Header{grid-area: Header;}
+        .Aside{grid-area: Aside;}
+        .Section{grid-area: Section;}
+        .Footer{grid-area: Footer;}
+
+
+        #container>div
+        {
+            border: 1px solid black;
+            background-color: springgreen;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="Header">안녕하세요 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt reprehenderit eum praesentium sequi tenetur voluptatum repellendus beatae aut quidem asperiores.</div>
+        <div class="Aside">안녕하세요 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt reprehenderit eum praesentium sequi tenetur voluptatum repellendus beatae aut quidem asperiores.</div>
+        <div class="Section">안녕하세요 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt reprehenderit eum praesentium sequi tenetur voluptatum repellendus beatae aut quidem asperiores.</div>
+        <div class="Footer">안녕하세요 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt reprehenderit eum praesentium sequi tenetur voluptatum repellendus beatae aut quidem asperiores.</div>
+    </div>
+</body>
+</html>

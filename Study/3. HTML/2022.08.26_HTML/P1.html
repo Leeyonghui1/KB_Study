@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>0826.P1</title>
+        <!--내부 CSS :: head태그 영역에 style태그를 추가하여 페이지 디자인-->
+        <!--link :: 하이퍼링크 설정 후 방문하지 않았을 때-->
+        <!--visited :: 하이퍼링크 텍스트를 통해 사이트 방문 후 돌아왔을 때-->
+        <!--hover :: 하이퍼링크 텍스트에 마우스를 올려놓았을 때-->
+        <!--active :: 하이퍼링크 텍스트를 마우스 왼쪽버튼으로 누르고 있을 때-->
+        <!--padding :: 해탕 태그 공간에 여백을 생성(배경색영역을 늘려준다)-->
+        <style>
+            a:link{
+                padding:10px;
+                background-color: lightsalmon;
+                color: crimson;
+            }
+            a:visited{
+                padding:10px;
+                background-color: lightsalmon;
+                color:green;
+            }
+            a:hover{
+                padding:10px;
+                background-color: chocolate;
+                color:darkorchid;
+            }
+            a:active{
+                padding:10px;
+                background-color: chocolate;
+                color:silver;
+            }
+            body{
+                background-image:url('data:image/jpeg;base64,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');
+                background-repeat:no-repeat;
+                background-size:cover;        
+            }
+            table{
+                border: 3px solid black;
+                width:70%;
+                background-color: white;
+            }
+            th,td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>W3School 사이트(blockquote 태그 사용)</p>
+        <!--blockquote 태그 :: 인용문태그, 부연 설명하는데에 사용-->
+        <blockquote>HTML, CSS, JAVA Script 등 문법 소개 사이트<br>유용한 사이트 중 하나</blockquote>
+        <br>
+
+        <p>W3School 사이트(q 태그 사용)</p>
+        <!--q 태그 :: 인용문태그, 짧은 인용문 작성할때, 자동으로 "" 사용-->
+        <q>HTML, CSS, JAVA Script 등 문법 소개 사이트<br>유용한 사이트 중 하나</q>
+        <br><br>
+
+        <a href="http://kb.or.kr/">경북산업직업전문학교 바로가기</a><br><br>
+        <a href="http://www.naver.com/">바로가기</a><br><br>
+
+        <!--table 태그-->
+        <p>나의 일정</p>
+        <table>
+            <!--tr :: 표의 하나의 행-->
+            <tr>
+                <!--th :: 해당 행에 대한 구성요소(head) [칼럼명]-->
+                <th>마감기한</th>
+                <th>우선순위</th>
+                <th>할일</th>
+            </tr>
+            <tr>
+                <!--td :: 해당 행에 대한 구성요소(data)-->
+                <td>8/26</td>
+                <td>2</td>
+                <td>숙면</td>
+            </tr>
+            <tr>
+                <td>8/26</td>
+                <td>1</td>
+                <td>수업</td>
+            </tr>
+        </table><br>
+
+        <p>좋아하는 것</p>
+        <!--ul 태그 :: 순서가 없는 목록을 나타내는 데에 사용-->
+        <ul>
+            <!--li 태그 :: 목록 태그 안에서 사용, 각 요소들을 표현-->
+            <li>커피</li>
+            <li>초밥</li>
+            <li>가을</li>
+        </ul>
+
+        <p>싫어하는 것</p>
+        <!--ol 태그 :: 순서가 있는 목록을 나타내는 데에 사용-->
+        <ol>
+            <li>여름</li>
+            <li>더위</li>
+            <li>장마</li>
+        </ol>
+
+        <p>좋아하는 것</p>
+        <!--dl 태그 :: 목록 태그 중 하나, 각 리스트에 대한 설명을 추가할 수 있음-->
+        <dl>
+            <!--dt 태그 :: li 태그와 비슷하게 목록의 각 요소들을 표현-->
+            <!--dd 태그 :: dt 태그에 작성한 내용에 대한 설명 삽입-->
+            <dt>커피</dt>
+            <dd>아주 쓴 커피</dd>
+            <dt>초밥</dt>
+            <dd>미슐랭 1스타</dd>
+        </dl>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치속성공식</title>
+    <style>
+        /* 자손 position이 absolute일때 부모 position은 static이면 안된다 */
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            position:absolute;
+        }
+        .red
+        {
+            z-index: 100;
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+        .green
+        {
+            z-index: 110;
+            background-color: green;
+            left: 20px;
+            top: 0px;
+        }
+        .blue
+        {
+            z-index: 105;
+            background-color: blue;
+        }
+        body>div
+        {
+            position: relative;
+            width: 500px;
+            height: 100px;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>0825.1번</title>
+        <!-- html :: 화면을 어떻게 구성하는가에 초점(화면 구현)-->
+        <!-- css :: 화면을 어떻게 표현하는가에 초점(화면 디자인)-->
+        <!-- head영역에서의 style태그 ::  body에서 쓰는 태그 스타일 일괄제어 -->
+        <!-- 내부 css :: head영역에 style태그 만들어서 스타일 정의-->
+        <style>
+            h3{background-color: moccasin;}
+            p{color:tomato;}
+            table,th,td{border:1px solid blue;}  
+        </style>
+        <!-- h3태그로 쓴 내용의 배경색은 무조건 mocaasin-->
+        <!-- p태그로 쓴 내용의 글자색은 무조건 tomato-->
+        <!-- table,th,td태그로 쓴 내용의 경계선은 크기1px solid형식 색상 blue-->
+    </head>
+    <body>
+        <!--style="font-family :: 글꼴 설정할 수 있는 style 속성"-->
+        <h3 style="font-family:monospace;">이 글꼴은 monospace 적용한 결과</h3>
+        <h3 style="font-family:courier;">이 글꼴은 courier 적용한 결과</h3>
+        <br>
+
+        <!--style="font-size" :: px 사이즈로 적용할 수도, % 배율로도 적용 가능-->
+        <h3 style="font-size:200%;">h3 글꼴 크기의 200% 적용한 결과</h3>
+        <h3 style="font-size:50%;">h3 글꼴 크기의 50% 적용한 결과</h3>
+        <br>
+
+        <!--style="text-align" :: 해당 태그의 내용 줄 맞춤을 설정-->
+        <p style="text-align:center;">중간 맞춤한 p태그</p>  <!--똑같은 표현 :: <p><center>중간</center></p>-->
+        <p style="text-align:right;">오른쪽으로 맞춤한 p태그</p>
+        <br>
+
+        <!--b 태그 :: 글자를 굵게 설정-->
+        <!--strong 태그 :: 글자를 더 굵게 설정-->
+        <!--i 태그 :: 글자를 기울여서 설정-->
+        <!--del 태그 :: 내용을 삭제표시(가로실선)-->
+        <p>이 다음은 <b style="font-size:200%;">b 태그로 설정한 bold 글꼴</b></p>
+        <p>이 다음은 <strong style="font-size:200%;">strong 태그로 설정한 글꼴</strong></p>
+        <p>이 다음은 <i>i 태그로 설정한 <del>12345</del> italic 글꼴</i></p>
+        <br>
+
+        <h3>테이블 만들기</h3>
+        <!--table 태그 :: 표 만드는 태그-->
+        <table border="1">
+            <tr>  <!--tr태그 :: 행 하나를 구성하는 태그-->
+                <th>우선순위</th>  <!--th태그 :: 해당 행에 대한 구성 요소(head) , 칼럼명역할-->
+                <th>할일</th>
+            </tr>
+            <tr>
+                <td><center>1</center></td>  <!--td태그 :: 해당 행에 대한 구성요소(data)-->
+                <td>산책</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>백준풀기</td>
+            </tr>
+            
+        </table>
+    </body>
+</html>
