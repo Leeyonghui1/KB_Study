@@ -1,0 +1,8 @@
+D:\C#\2022.11.14_CSharp\P4\bin\Debug\P4.exe.config
+D:\C#\2022.11.14_CSharp\P4\bin\Debug\P4.exe
+D:\C#\2022.11.14_CSharp\P4\bin\Debug\P4.pdb
+D:\C#\2022.11.14_CSharp\P4\obj\Debug\P4.csproj.AssemblyReference.cache
+D:\C#\2022.11.14_CSharp\P4\obj\Debug\P4.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.14_CSharp\P4\obj\Debug\P4.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.14_CSharp\P4\obj\Debug\P4.exe
+D:\C#\2022.11.14_CSharp\P4\obj\Debug\P4.pdb

@@ -1,0 +1,8 @@
+D:\C#\2022.11.14_CSharp\P3\bin\Debug\P3.exe.config
+D:\C#\2022.11.14_CSharp\P3\bin\Debug\P3.exe
+D:\C#\2022.11.14_CSharp\P3\bin\Debug\P3.pdb
+D:\C#\2022.11.14_CSharp\P3\obj\Debug\P3.csproj.AssemblyReference.cache
+D:\C#\2022.11.14_CSharp\P3\obj\Debug\P3.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.14_CSharp\P3\obj\Debug\P3.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.14_CSharp\P3\obj\Debug\P3.exe
+D:\C#\2022.11.14_CSharp\P3\obj\Debug\P3.pdb

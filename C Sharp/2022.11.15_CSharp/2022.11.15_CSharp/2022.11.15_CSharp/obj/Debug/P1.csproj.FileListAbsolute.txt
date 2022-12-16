@@ -1,0 +1,8 @@
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\bin\Debug\2022.11.15_CSharp.exe.config
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\bin\Debug\2022.11.15_CSharp.exe
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\bin\Debug\2022.11.15_CSharp.pdb
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\obj\Debug\P1.csproj.AssemblyReference.cache
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\obj\Debug\P1.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\obj\Debug\P1.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\obj\Debug\2022.11.15_CSharp.exe
+D:\C#\2022.11.15_CSharp\2022.11.15_CSharp\2022.11.15_CSharp\obj\Debug\2022.11.15_CSharp.pdb

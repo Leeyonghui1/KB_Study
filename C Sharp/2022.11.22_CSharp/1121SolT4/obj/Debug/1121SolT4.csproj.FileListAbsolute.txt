@@ -1,0 +1,11 @@
+D:\C#\2022.11.22_CSharp\1121SolT4\bin\Debug\1121SolT4.exe.config
+D:\C#\2022.11.22_CSharp\1121SolT4\bin\Debug\1121SolT4.exe
+D:\C#\2022.11.22_CSharp\1121SolT4\bin\Debug\1121SolT4.pdb
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.csproj.AssemblyReference.cache
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\_1121SolT4.Form1.resources
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\_1121SolT4.Properties.Resources.resources
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.csproj.GenerateResource.cache
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.exe
+D:\C#\2022.11.22_CSharp\1121SolT4\obj\Debug\1121SolT4.pdb

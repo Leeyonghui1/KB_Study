@@ -1,0 +1,8 @@
+D:\C#\2022.11.14_CSharp\T2\bin\Debug\T2.exe.config
+D:\C#\2022.11.14_CSharp\T2\bin\Debug\T2.exe
+D:\C#\2022.11.14_CSharp\T2\bin\Debug\T2.pdb
+D:\C#\2022.11.14_CSharp\T2\obj\Debug\T2.csproj.AssemblyReference.cache
+D:\C#\2022.11.14_CSharp\T2\obj\Debug\T2.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.14_CSharp\T2\obj\Debug\T2.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.14_CSharp\T2\obj\Debug\T2.exe
+D:\C#\2022.11.14_CSharp\T2\obj\Debug\T2.pdb

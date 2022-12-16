@@ -1,0 +1,11 @@
+D:\C#\2022.11.21_CSharp\SolT3\bin\Debug\SolT3.exe.config
+D:\C#\2022.11.21_CSharp\SolT3\bin\Debug\SolT3.exe
+D:\C#\2022.11.21_CSharp\SolT3\bin\Debug\SolT3.pdb
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.csproj.AssemblyReference.cache
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.Form1.resources
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.Properties.Resources.resources
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.csproj.GenerateResource.cache
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.exe
+D:\C#\2022.11.21_CSharp\SolT3\obj\Debug\SolT3.pdb

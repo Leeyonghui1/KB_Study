@@ -1,0 +1,8 @@
+D:\C#\2022.11.14_CSharp\P6\bin\Debug\P6.exe.config
+D:\C#\2022.11.14_CSharp\P6\bin\Debug\P6.exe
+D:\C#\2022.11.14_CSharp\P6\bin\Debug\P6.pdb
+D:\C#\2022.11.14_CSharp\P6\obj\Debug\P6.csproj.AssemblyReference.cache
+D:\C#\2022.11.14_CSharp\P6\obj\Debug\P6.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.14_CSharp\P6\obj\Debug\P6.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.14_CSharp\P6\obj\Debug\P6.exe
+D:\C#\2022.11.14_CSharp\P6\obj\Debug\P6.pdb

@@ -1,0 +1,11 @@
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\bin\Debug\2022.11.18_CSharp.exe.config
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\bin\Debug\2022.11.18_CSharp.exe
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\bin\Debug\2022.11.18_CSharp.pdb
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.csproj.AssemblyReference.cache
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\_2022._11._18_CSharp.Properties.Resources.resources
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.csproj.GenerateResource.cache
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.exe
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\2022.11.18_CSharp.pdb
+D:\C#\2022.11.18_CSharp\2022.11.18_CSharp\obj\Debug\_2022._11._18_CSharp.Form1.resources

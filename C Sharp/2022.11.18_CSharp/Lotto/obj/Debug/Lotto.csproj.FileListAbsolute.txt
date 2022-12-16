@@ -1,0 +1,11 @@
+D:\C#\2022.11.18_CSharp\Lotto\bin\Debug\Lotto.exe.config
+D:\C#\2022.11.18_CSharp\Lotto\bin\Debug\Lotto.exe
+D:\C#\2022.11.18_CSharp\Lotto\bin\Debug\Lotto.pdb
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.csproj.AssemblyReference.cache
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.Form1.resources
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.Properties.Resources.resources
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.exe
+D:\C#\2022.11.18_CSharp\Lotto\obj\Debug\Lotto.pdb

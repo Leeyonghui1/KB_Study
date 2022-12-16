@@ -1,0 +1,8 @@
+D:\C#\2022.11.14_CSharp\T3\bin\Debug\T3.exe.config
+D:\C#\2022.11.14_CSharp\T3\bin\Debug\T3.exe
+D:\C#\2022.11.14_CSharp\T3\bin\Debug\T3.pdb
+D:\C#\2022.11.14_CSharp\T3\obj\Debug\T3.csproj.AssemblyReference.cache
+D:\C#\2022.11.14_CSharp\T3\obj\Debug\T3.csproj.SuggestedBindingRedirects.cache
+D:\C#\2022.11.14_CSharp\T3\obj\Debug\T3.csproj.CoreCompileInputs.cache
+D:\C#\2022.11.14_CSharp\T3\obj\Debug\T3.exe
+D:\C#\2022.11.14_CSharp\T3\obj\Debug\T3.pdb
