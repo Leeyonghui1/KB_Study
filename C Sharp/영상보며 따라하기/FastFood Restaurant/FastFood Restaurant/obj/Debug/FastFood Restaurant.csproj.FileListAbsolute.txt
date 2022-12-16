@@ -1,0 +1,13 @@
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\bin\Debug\FastFood Restaurant.exe.config
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\bin\Debug\FastFood Restaurant.exe
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\bin\Debug\FastFood Restaurant.pdb
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood_Restaurant.Form1.resources
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood_Restaurant.Properties.Resources.resources
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.exe
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood Restaurant.pdb
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood_Restaurant.FirstCustomControl.resources
+C:\Users\KB\Desktop\수업\FastFood Restaurant\FastFood Restaurant\obj\Debug\FastFood_Restaurant.SecondCustomControl.resources

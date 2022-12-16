@@ -1,0 +1,11 @@
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\bin\Debug\Flat Login.exe.config
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\bin\Debug\Flat Login.exe
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\bin\Debug\Flat Login.pdb
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat_Login.Form1.resources
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat_Login.Properties.Resources.resources
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.exe
+C:\Users\KB\Desktop\수업\Flat Login\Flat Login\obj\Debug\Flat Login.pdb

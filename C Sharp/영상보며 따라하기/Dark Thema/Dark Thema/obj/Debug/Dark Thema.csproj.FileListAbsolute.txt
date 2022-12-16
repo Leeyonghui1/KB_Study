@@ -1,0 +1,11 @@
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\bin\Debug\Dark Thema.exe.config
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\bin\Debug\Dark Thema.exe
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\bin\Debug\Dark Thema.pdb
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark_Thema.Form1.resources
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark_Thema.Properties.Resources.resources
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.exe
+C:\Users\KB\Desktop\수업\Dark Thema\Dark Thema\obj\Debug\Dark Thema.pdb
