@@ -1,0 +1,26 @@
+package test1;
+
+import test1_1.GameCharacter;
+
+public class MagicianSol extends GameCharacter {
+	private int mp;
+	
+	public MagicianSol() {
+		
+	}
+	public MagicianSol(String id, String _Class, int mp) {
+		super(id, _Class);
+		this.mp = mp;
+	}
+	
+	public int getMp() {return mp;}
+	public void setMp(int mp) {this.mp = mp;}
+	
+	public void magicArrow() 
+	{	
+		System.out.println(mp+"를 담은 혼신의 매직 애로우 쿠와아");
+		System.out.println(getId()+"님의 " + get_Class()+"계의 최고 기술 발동");
+		System.out.println(getLevel()+"레벨 치곤 괜찮은 공격!");	
+	}
+
+}
